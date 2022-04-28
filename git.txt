@@ -1,0 +1,73 @@
+Git -----   client side tool for connecting to github and performing the source code managment
+activities
+
+
+GitHub --- It is a central repository to store and manage the code as per client commands
+
+
+
+
+git ----------------------------------> github
+Client                                   centralhub (server)
+
+
+
+
+
+Here is a basic overview of how Git works:
+
+    Create a "repository" (project) with a git hosting tool (like Bitbucket)
+    Copy (or clone) the repository to your local machine
+    Add a file to your local repo and "commit" (save) the changes
+    "Push" your changes to your main branch
+    Make a change to your file with a git hosting tool and commit
+    "Pull" the changes to your local machine
+    Create a "branch" (version), make a change, commit the change
+    Open a "pull request" (propose changes to the main branch)
+    "Merge" your branch to the main branch
+
+
+1. git config --global user.name <name> 
+		Define the author name to be used for all commits by the current user.
+
+2. git config --global user.email <email> 
+		Define the author email to be used for all commits by the current user
+
+3. git init <directory>
+		Create empty Git repo in specified directory. Run with no arguments to initialize the current 
+         directory as a git repository.
+
+4. git clone <repo> 
+        clone repo located in github to the current directory.
+
+5. git add <fileslist>/.
+
+6. git commit -m "commit Message"
+
+7. git branch -M <branchname> 
+   ex: git branch -M main
+
+8. git remote add <name> <url>  -- <name> can be used as shortcut for the url
+   git remote add origin https://github.com/praveeniiht/dummyrepo.git
+  
+
+9. git push -u origin main
+
+10. git log --
+
+11. git branch  -- List all of the branches in your repo
+
+12. git checkout -b <branch>
+
+    This command will create a new branch called <branch> and checksout the code intoit.
+    if we remove -b then it will looks for existing branch to checkout
+
+13. git merge <branch>
+     Merge <branch> into the current branch.
+
+
+
+
+
+
+
