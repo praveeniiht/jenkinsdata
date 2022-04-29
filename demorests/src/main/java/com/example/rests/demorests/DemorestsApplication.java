@@ -23,4 +23,9 @@ public class DemorestsApplication {
 		return "Rest2 is working inside docker";
 	}
 
+	@GetMapping("/rest3")
+	public String rest3() {
+		return "Rest3 is working inside docker";
+	}
+
 }
