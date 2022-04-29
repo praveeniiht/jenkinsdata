@@ -13,9 +13,14 @@ public class DemorestsApplication {
 		SpringApplication.run(DemorestsApplication.class, args);
 	}
 	
-	@GetMapping("/rest")
-	public String rest() {
-		return "Rest is working inside docker";
+	@GetMapping("/rest1")
+	public String rest1() {
+		return "Rest1 is working inside docker";
+	}
+	
+	@GetMapping("/rest2")
+	public String rest2() {
+		return "Rest2 is working inside docker";
 	}
 
 }
